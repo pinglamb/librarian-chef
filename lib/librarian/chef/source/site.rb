@@ -64,7 +64,7 @@ module Librarian
           end
 
           def uri
-            @uri ||= URI.parse("#{source.uri}/cookbooks/#{name}")
+            @uri ||= URI.parse("#{source.uri}/#{name}")
           end
 
           def version_uris
